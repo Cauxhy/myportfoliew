@@ -33,14 +33,14 @@ export default function Example() {
     <header className="bg-white">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              alt="#"
-              src={logo}
-              className="h-8 w-auto rounded-full"
-            />
-          </a>
+        <Link to="/" className="-m-1.5 p-1.5">
+          <span className="sr-only">Your Company</span>
+          <img
+            alt="Your Company Logo"
+            src={logo}
+            className="h-8 w-auto rounded-full"
+          />
+        </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -84,14 +84,14 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="/" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                alt="#"
+                alt="Your Company Logo"
                 src={logo}
                 className="h-8 w-auto rounded-full"
               />
-            </a>
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
@@ -104,30 +104,30 @@ export default function Example() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
+                <Link
                   href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue hover:bg-gray-50 link"
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 link"
                 >
                   About
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/projects"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 link"
                 >
                   Projects
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/certifications"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 link"
                 >
                   Certifications
-                </a>
+                </Link>
               </div>
               <div className="py-6">
                 <nav
