@@ -1,6 +1,6 @@
 import React from 'react';
 import HomeComponent from './pages_components/home';
-import Head from './pages_components/Head';
+import Head from './Head';
 
 const Home = () => {
   return (
