@@ -1,6 +1,6 @@
 import React from 'react';
-import Head from './pages_components/Head';
-import Aboutdes from './pages_components/about';
+import Head from './Head';
+import Aboutdes from './aboutContent';
 
 const About = () => {
   return (

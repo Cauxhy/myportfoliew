@@ -1,12 +1,12 @@
 import React from 'react';
-import HomeComponent from './pages_components/home';
+import HomeComponent from './homeContent';
 import Head from './Head';
 
 const Home = () => {
   return (
     <div>
        <Head />
-       <h2>Hello</h2>
+      <HomeComponent /> {/* Use the HomeComponent here */}
     </div>
   );
 };
