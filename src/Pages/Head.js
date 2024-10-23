@@ -21,6 +21,7 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom';
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import logo from './pic/1000008938.png'
@@ -52,19 +53,19 @@ export default function Example() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        <Link to="/" className="text-sm font-semibold leading-6 text-blue link">
+          Home
+        </Link>
+        <Link to="/about" className="text-sm font-semibold leading-6 text-gray-900 link">
+          About
+        </Link>
+        <Link to="/projects" className="text-sm font-semibold leading-6 text-gray-900 link">
+          Projects
+        </Link>
+        <Link to="/certifications" className="text-sm font-semibold leading-6 text-gray-900 link">
+          Certifications
+        </Link>
 
-          <a href="/" className="text-sm font-semibold leading-6 text-blue link">
-            Home
-          </a>
-          <a href="/about" className="text-sm font-semibold leading-6 text-gray-900 link">
-            About
-          </a>
-          <a href="/projects" className="text-sm font-semibold leading-6 text-gray-900 link">
-            Projects
-          </a>
-          <a href="certifications" className="text-sm font-semibold leading-6 text-gray-900 link">
-            Certifications
-          </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <nav className="text-sm font-semibold leading-6 text-gray-900">
