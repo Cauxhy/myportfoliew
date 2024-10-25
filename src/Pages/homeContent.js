@@ -1,29 +1,31 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
-
+import codingIcon from './pic/coding.png'
+import detailsIcon from './pic/details.png'
+import ideaIcon from './pic/idea.png'
+import learningIcon from './pic/learning.png'
 const features = [
   {
     name: 'Modern Development Practices',
     description:
       'I stay up-to-date with the latest technologies and development methodologies, ensuring that my work is efficient, maintainable, and scalable.',
-    icon: CloudArrowUpIcon,
+    icon: codingIcon,
   },
   {
     name: 'Attention to Detail',
     description:
       'I take pride in delivering high-quality work. I pay close attention to the little details that make a big difference, ensuring everything is done to perfection.',
-    icon: LockClosedIcon,
+    icon: detailsIcon,
   },
   {
     name: 'Problem-Solving Skills',
     description:
       'I approach each project with a problem-solving mindset, ready to tackle challenges and find the best solutions. I believe there’s always a way to improve and innovate.',
-    icon: ArrowPathIcon,
+    icon: ideaIcon,
   },
   {
     name: 'Passion for Learning',
     description:
       'I have a continuous desire to learn and grow. Staying curious and improving my skills is what drives me to keep evolving in my work.',
-    icon: FingerPrintIcon,
+    icon: learningIcon,
   },
 ];
 
@@ -51,7 +53,7 @@ export default function Example() {
               <div key={feature.name} className="relative pl-20">
                 <dt className="text-base font-semibold leading-7 text-gray-900 title">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue">
-                    <feature.icon aria-hidden="true" className="h-6 w-6 text-black" />
+                    <img src={feature.icon} aria-hidden="true" className="h-6 w-6 text-black" alt={feature.name} />
                   </div>
                   {feature.name}
                 </dt>
